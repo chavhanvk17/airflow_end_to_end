@@ -11083,3 +11083,304 @@ Please take a look at these docs to improve your DAG import time:
 [2024-02-22T10:30:03.816+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:30:03.813+0000] {dag.py:3036} INFO - Sync 1 DAGs
 [2024-02-22T10:30:03.864+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:30:03.863+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
 [2024-02-22T10:30:03.914+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 1.957 seconds
+[2024-02-22T10:30:14.081+0000] {processor.py:161} INFO - Started process (PID=21208) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:30:14.082+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:30:14.084+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:30:14.083+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:30:15.651+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:30:15.682+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:30:15.682+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:30:15.700+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:30:15.700+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:30:15.722+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 1.645 seconds
+[2024-02-22T10:30:25.885+0000] {processor.py:161} INFO - Started process (PID=21221) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:30:25.887+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:30:25.889+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:30:25.888+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:30:27.622+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:30:27.656+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:30:27.655+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:30:27.681+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:30:27.681+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:30:27.710+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 1.829 seconds
+[2024-02-22T10:30:37.898+0000] {processor.py:161} INFO - Started process (PID=21234) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:30:37.899+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:30:37.901+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:30:37.901+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:30:39.516+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:30:39.545+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:30:39.545+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:30:39.565+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:30:39.564+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:30:39.587+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 1.693 seconds
+[2024-02-22T10:30:49.738+0000] {processor.py:161} INFO - Started process (PID=21247) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:30:49.740+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:30:49.741+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:30:49.741+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:30:51.233+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:30:51.266+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:30:51.266+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:30:51.285+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:30:51.285+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:30:51.308+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 1.574 seconds
+[2024-02-22T10:31:01.486+0000] {processor.py:161} INFO - Started process (PID=21260) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:31:01.487+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:31:01.490+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:31:01.489+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:31:03.312+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:31:03.351+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:31:03.350+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:31:03.377+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:31:03.377+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:31:03.407+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 1.925 seconds
+[2024-02-22T10:31:13.579+0000] {processor.py:161} INFO - Started process (PID=21273) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:31:13.581+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:31:13.582+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:31:13.582+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:31:15.348+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:31:15.378+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:31:15.377+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:31:15.397+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:31:15.396+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:31:15.421+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 1.845 seconds
+[2024-02-22T10:31:25.597+0000] {processor.py:161} INFO - Started process (PID=21286) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:31:25.599+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:31:25.601+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:31:25.600+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:31:27.309+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:31:27.353+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:31:27.351+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:31:27.384+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:31:27.384+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:31:27.410+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 1.817 seconds
+[2024-02-22T10:31:37.572+0000] {processor.py:161} INFO - Started process (PID=21299) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:31:37.574+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:31:37.576+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:31:37.575+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:31:39.248+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:31:39.278+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:31:39.277+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:31:39.298+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:31:39.298+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:31:39.324+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 1.759 seconds
+[2024-02-22T10:31:49.496+0000] {processor.py:161} INFO - Started process (PID=21312) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:31:49.497+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:31:49.499+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:31:49.499+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:31:51.273+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:31:51.305+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:31:51.305+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:31:51.329+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:31:51.329+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:31:51.357+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 1.865 seconds
+[2024-02-22T10:32:01.534+0000] {processor.py:161} INFO - Started process (PID=21325) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:32:01.537+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:32:01.539+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:32:01.539+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:32:03.249+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:32:03.297+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:32:03.296+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:32:03.325+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:32:03.325+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:32:03.349+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 1.821 seconds
+[2024-02-22T10:32:13.513+0000] {processor.py:161} INFO - Started process (PID=21338) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:32:13.515+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:32:13.516+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:32:13.516+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:32:15.263+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:32:15.304+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:32:15.303+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:32:15.328+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:32:15.328+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:32:15.357+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 1.847 seconds
+[2024-02-22T10:32:25.542+0000] {processor.py:161} INFO - Started process (PID=21351) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:32:25.544+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:32:25.546+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:32:25.545+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:32:27.292+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:32:27.323+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:32:27.321+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:32:27.343+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:32:27.343+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:32:27.374+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 1.837 seconds
+[2024-02-22T10:32:37.551+0000] {processor.py:161} INFO - Started process (PID=21364) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:32:37.553+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:32:37.555+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:32:37.555+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:32:39.315+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:32:39.368+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:32:39.368+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:32:39.397+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:32:39.396+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:32:39.422+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 1.874 seconds
+[2024-02-22T10:32:49.587+0000] {processor.py:161} INFO - Started process (PID=21377) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:32:49.589+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:32:49.592+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:32:49.591+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:32:51.137+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:32:51.164+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:32:51.164+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:32:51.183+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:32:51.182+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:32:51.206+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 1.624 seconds
+[2024-02-22T10:33:01.388+0000] {processor.py:161} INFO - Started process (PID=21390) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:33:01.390+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:33:01.392+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:33:01.391+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:33:03.367+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:33:03.402+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:33:03.402+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:33:03.427+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:33:03.427+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:33:03.454+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 2.070 seconds
+[2024-02-22T10:33:13.609+0000] {processor.py:161} INFO - Started process (PID=21403) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:33:13.611+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:33:13.612+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:33:13.612+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:33:15.351+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:33:15.381+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:33:15.381+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:33:15.401+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:33:15.401+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:33:15.425+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 1.821 seconds
+[2024-02-22T10:33:25.583+0000] {processor.py:161} INFO - Started process (PID=21416) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:33:25.585+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:33:25.587+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:33:25.586+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:33:27.323+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:33:27.360+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:33:27.359+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:33:27.389+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:33:27.389+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:33:27.429+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 1.851 seconds
+[2024-02-22T10:33:37.636+0000] {processor.py:161} INFO - Started process (PID=21429) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:33:37.638+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:33:37.639+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:33:37.639+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:33:39.289+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:33:39.320+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:33:39.319+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:33:39.341+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:33:39.341+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:33:39.363+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 1.731 seconds
+[2024-02-22T10:33:49.539+0000] {processor.py:161} INFO - Started process (PID=21442) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:33:49.541+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:33:49.542+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:33:49.542+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:33:51.152+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:33:51.181+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:33:51.180+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:33:51.200+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:33:51.199+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:33:51.223+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 1.688 seconds
+[2024-02-22T10:34:01.383+0000] {processor.py:161} INFO - Started process (PID=21455) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:34:01.385+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:34:01.387+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:34:01.387+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:34:03.199+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:34:03.241+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:34:03.240+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:34:03.261+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:34:03.260+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:34:03.297+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 1.919 seconds
+[2024-02-22T10:34:13.824+0000] {processor.py:161} INFO - Started process (PID=21468) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:34:13.826+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:34:13.827+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:34:13.827+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:34:15.673+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:34:15.708+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:34:15.707+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:34:15.729+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:34:15.729+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:34:15.754+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 1.935 seconds
+[2024-02-22T10:34:25.924+0000] {processor.py:161} INFO - Started process (PID=21481) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:34:25.927+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:34:25.929+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:34:25.928+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:34:27.661+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:34:27.694+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:34:27.694+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:34:27.719+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:34:27.718+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:34:27.754+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 1.836 seconds
+[2024-02-22T10:34:37.935+0000] {processor.py:161} INFO - Started process (PID=21494) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:34:37.937+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:34:37.939+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:34:37.938+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:34:39.640+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:34:39.690+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:34:39.689+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:34:39.725+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:34:39.724+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:34:39.756+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 1.825 seconds
+[2024-02-22T10:34:49.924+0000] {processor.py:161} INFO - Started process (PID=21507) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:34:49.926+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:34:49.928+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:34:49.927+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:34:51.688+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:34:51.718+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:34:51.716+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:34:51.738+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:34:51.738+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:34:51.763+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 1.843 seconds
+[2024-02-22T10:35:01.872+0000] {processor.py:161} INFO - Started process (PID=21520) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:35:01.873+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:35:01.875+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:35:01.875+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:35:05.792+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:35:05.841+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:35:05.841+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:35:05.866+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:35:05.866+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:35:05.893+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 4.009 seconds
+[2024-02-22T10:35:16.057+0000] {processor.py:161} INFO - Started process (PID=21533) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:35:16.059+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:35:16.061+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:35:16.061+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:35:17.896+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:35:17.964+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:35:17.963+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:35:17.983+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:35:17.982+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:35:18.008+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 1.955 seconds
+[2024-02-22T10:35:28.187+0000] {processor.py:161} INFO - Started process (PID=21546) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:35:28.189+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:35:28.191+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:35:28.190+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:35:29.899+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:35:29.959+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:35:29.958+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:35:29.994+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:35:29.994+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:35:30.023+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 1.840 seconds
+[2024-02-22T10:35:40.197+0000] {processor.py:161} INFO - Started process (PID=21559) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:35:40.198+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:35:40.200+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:35:40.200+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:35:42.009+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:35:42.040+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:35:42.040+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:35:42.061+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:35:42.061+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:35:42.096+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 1.903 seconds
+[2024-02-22T10:35:52.287+0000] {processor.py:161} INFO - Started process (PID=21572) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:35:52.290+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:35:52.292+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:35:52.291+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:35:54.015+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:35:54.051+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:35:54.050+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:35:54.075+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:35:54.074+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:35:54.104+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 1.823 seconds
+[2024-02-22T10:36:04.288+0000] {processor.py:161} INFO - Started process (PID=21585) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:36:04.289+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:36:04.291+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:36:04.291+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:36:06.053+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:36:06.092+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:36:06.092+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:36:06.121+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:36:06.121+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:36:06.157+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 1.877 seconds
+[2024-02-22T10:36:16.328+0000] {processor.py:161} INFO - Started process (PID=21598) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:36:16.330+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:36:16.331+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:36:16.331+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:36:18.021+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:36:18.058+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:36:18.057+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:36:18.089+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:36:18.089+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:36:18.132+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 1.808 seconds
+[2024-02-22T10:36:28.321+0000] {processor.py:161} INFO - Started process (PID=21611) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:36:28.323+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:36:28.325+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:36:28.325+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:36:30.016+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:36:30.051+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:36:30.050+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:36:30.074+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:36:30.073+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:36:30.099+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 1.783 seconds
+[2024-02-22T10:36:40.272+0000] {processor.py:161} INFO - Started process (PID=21624) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:36:40.275+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:36:40.276+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:36:40.276+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:36:42.089+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:36:42.120+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:36:42.119+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:36:42.143+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:36:42.143+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:36:42.179+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 1.912 seconds
+[2024-02-22T10:36:52.371+0000] {processor.py:161} INFO - Started process (PID=21637) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:36:52.373+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:36:52.374+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:36:52.374+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:36:54.207+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:36:54.237+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:36:54.237+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:36:54.261+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:36:54.260+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:36:54.287+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 1.921 seconds
+[2024-02-22T10:37:04.459+0000] {processor.py:161} INFO - Started process (PID=21650) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:37:04.461+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:37:04.463+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:37:04.462+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:37:06.413+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:37:06.452+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:37:06.451+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:37:06.482+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:37:06.481+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:37:06.516+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 2.062 seconds
+[2024-02-22T10:37:16.719+0000] {processor.py:161} INFO - Started process (PID=21663) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:37:16.721+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:37:16.722+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:37:16.722+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:37:18.298+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:37:18.339+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:37:18.337+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:37:18.376+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:37:18.376+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:37:18.406+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 1.690 seconds
+[2024-02-22T10:37:28.565+0000] {processor.py:161} INFO - Started process (PID=21676) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:37:28.566+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:37:28.568+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:37:28.568+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:37:30.297+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:37:30.331+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:37:30.331+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:37:30.354+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:37:30.353+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:37:30.375+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 1.814 seconds
+[2024-02-22T10:37:40.555+0000] {processor.py:161} INFO - Started process (PID=21689) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:37:40.557+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:37:40.558+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:37:40.558+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:37:42.389+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:37:42.426+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:37:42.425+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:37:42.448+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:37:42.448+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:37:42.478+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 1.926 seconds
+[2024-02-22T10:37:52.668+0000] {processor.py:161} INFO - Started process (PID=21702) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:37:52.683+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:37:52.690+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:37:52.689+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:37:54.662+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:37:54.695+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:37:54.695+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:37:54.716+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:37:54.716+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:37:54.742+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 2.078 seconds
+[2024-02-22T10:38:04.930+0000] {processor.py:161} INFO - Started process (PID=21715) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:38:04.931+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:38:04.933+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:38:04.933+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:38:06.884+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:38:06.944+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:38:06.943+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:38:06.974+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:38:06.973+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:38:07.013+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 2.087 seconds
+[2024-02-22T10:38:17.196+0000] {processor.py:161} INFO - Started process (PID=21728) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:38:17.198+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:38:17.200+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:38:17.199+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:38:19.045+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:38:19.080+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:38:19.079+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:38:19.103+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:38:19.103+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:38:19.128+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 1.936 seconds
+[2024-02-22T10:38:29.291+0000] {processor.py:161} INFO - Started process (PID=21741) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:38:29.294+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:38:29.295+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:38:29.295+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:38:31.094+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:38:31.137+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:38:31.137+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:38:31.164+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:38:31.164+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:38:31.193+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 1.906 seconds
+[2024-02-22T10:38:41.283+0000] {processor.py:161} INFO - Started process (PID=21754) to work on /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:38:41.285+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow-aws-mlflow.py for tasks to queue
+[2024-02-22T10:38:41.287+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:38:41.287+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:38:42.935+0000] {processor.py:840} INFO - DAG(s) 'airflow-s3-mlflow' retrieved from /opt/airflow/dags/airflow-aws-mlflow.py
+[2024-02-22T10:38:42.968+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:38:42.967+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-22T10:38:42.994+0000] {logging_mixin.py:188} INFO - [2024-02-22T10:38:42.993+0000] {dag.py:3823} INFO - Setting next_dagrun for airflow-s3-mlflow to 2024-02-22 00:00:00+00:00, run_after=2024-02-23 00:00:00+00:00
+[2024-02-22T10:38:43.020+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow-aws-mlflow.py took 1.742 seconds
