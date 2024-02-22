@@ -27,7 +27,7 @@ x-airflow-common:
   # image: ${AIRFLOW_IMAGE_NAME:-latest_airflow:latest}
   # image: airflow-mlflow
   # env_file:
-  # .env:
+  #     .env:
   environment:
     
     &airflow-common-env
@@ -38,14 +38,14 @@ x-airflow-common:
     AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
     AIRFLOW__SCHEDULER__MIN_FILE_PROCESS_INTERVAL: 10
     MLFLOW_TRACKING_URI: "http://127.0.0.1:5000"
-    # AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
-    # AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
-    # AWS_DEFAULT_REGION: ${AWS_REGION}
-    # AWS_BUCKET_NAME: $(AWS_BUCKET_NAME)
-    AWS_ACCESS_KEY_ID: AKIAVFEMSOGGZB4AJ3UI
-    AWS_SECRET_ACCESS_KEY: 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
-    AWS_DEFAULT_REGION: us-east-1
-    AWS_BUCKET_NAME: airdemobkt
+    AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
+    AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
+    AWS_DEFAULT_REGION: ${AWS_REGION}
+    AWS_BUCKET_NAME: $(AWS_BUCKET_NAME)
+    # AWS_ACCESS_KEY_ID: 
+    # AWS_SECRET_ACCESS_KEY: 
+    # AWS_DEFAULT_REGION: 
+    # AWS_BUCKET_NAME: 
 
 
   volumes:
