@@ -8,7 +8,7 @@ __version__ = "0.0.0"
 
 REPO_NAME = "airflow_end_to_end"
 AUTHOR_USER_NAME = "chavhanvk17"
-SRC_REPO = "src"
+SRC_REPO = "newenv"
 AUTHOR_EMAIL = "chavhanvk17@gmail.com"
 
 
@@ -24,6 +24,6 @@ setuptools.setup(
     project_urls={
         "Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues",
     },
-    package_dir={"": "src"},
-    packages=setuptools.find_packages(where="newenv")
+    package_dir={"": "newenv"},
+    packages=setuptools.find_packages(where="Lib")
 )
