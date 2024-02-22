@@ -15,4 +15,4 @@ joblib
 dill
 pyYAML
 numpy
--e .
+
