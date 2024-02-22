@@ -1,0 +1,170 @@
+# Basic Airflow cluster configuration for CeleryExecutor with Redis and PostgreSQL.
+#
+# WARNING: This configuration is for local development. Do not use it in a production deployment.
+#
+# This configuration supports basic configuration using environment variables or an .env file
+# The following variables are supported:
+#
+# AIRFLOW_IMAGE_NAME         - Docker image name used to run Airflow.
+#                              Default: apache/airflow:master-python3.8
+# AIRFLOW_UID                - User ID in Airflow containers
+#                              Default: 50000
+# AIRFLOW_GID                - Group ID in Airflow containers
+#                              Default: 50000
+# _AIRFLOW_WWW_USER_USERNAME - Username for the administrator account.
+#                              Default: airflow
+# _AIRFLOW_WWW_USER_PASSWORD - Password for the administrator account.
+#                              Default: airflow
+#
+# Feel free to modify this file to suit your needs.
+---
+version: '3.8'
+x-airflow-common:
+  &airflow-common
+  build:
+    context: .
+    dockerfile: Dockerfile.airflow 
+  # image: ${AIRFLOW_IMAGE_NAME:-latest_airflow:latest}
+  # image: airflow-mlflow
+  # env_file:
+  # .env:
+  environment:
+    
+    &airflow-common-env
+    AIRFLOW__CORE__EXECUTOR: LocalExecutor
+    AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+    AIRFLOW__CORE__FERNET_KEY: ''
+    AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
+    AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+    AIRFLOW__SCHEDULER__MIN_FILE_PROCESS_INTERVAL: 10
+    MLFLOW_TRACKING_URI: "http://127.0.0.1:5000"
+    # AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
+    # AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
+    # AWS_DEFAULT_REGION: ${AWS_REGION}
+    # AWS_BUCKET_NAME: $(AWS_BUCKET_NAME)
+    AWS_ACCESS_KEY_ID: AKIAVFEMSOGGZB4AJ3UI
+    AWS_SECRET_ACCESS_KEY: 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
+    AWS_DEFAULT_REGION: us-east-1
+    AWS_BUCKET_NAME: airdemobkt
+
+
+  volumes:
+    - ./airflow/dags:/opt/airflow/dags
+    - ./airflow/logs:/opt/airflow/logs
+    - ./airflow/plugins:/opt/airflow/plugins
+    - ./data:/opt/airflow/data
+    - ./notebooks:/opt/airflow/notebooks
+    - ./src:/opt/airflow/src
+
+  user: "${AIRFLOW_UID:-50000}:${AIRFLOW_GID:-50000}"
+  depends_on:
+    &airflow-common-depends-on
+    postgres:
+      condition: service_healthy
+
+services:
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    volumes:
+      - postgres-db-volume-airflow:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "airflow"]
+      interval: 5s
+      retries: 5
+    restart: always
+
+  airflow-webserver:
+    <<: *airflow-common
+    command: webserver
+    ports:
+      - 8080:8080
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8080/health"]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+    restart: always
+
+  airflow-scheduler:
+    <<: *airflow-common
+    command: scheduler
+    restart: always
+
+
+  airflow-init:
+    <<: *airflow-common
+    command: version
+    environment:
+      <<: *airflow-common-env
+      _AIRFLOW_DB_UPGRADE: 'true'
+      _AIRFLOW_WWW_USER_CREATE: 'true'
+      _AIRFLOW_WWW_USER_USERNAME: ${_AIRFLOW_WWW_USER_USERNAME:-airflow}
+      _AIRFLOW_WWW_USER_PASSWORD: ${_AIRFLOW_WWW_USER_PASSWORD:-airflow}
+    
+  mlflow-server:
+    build:
+      context: .
+      dockerfile: Dockerfile.mlflow
+
+    ports:
+      - "5000:5000"  # Expose MLflow UI
+    volumes:
+      - mlflow-data:/mlflow
+
+  # postgres-mlflow:
+  #   image: postgres:13
+  #   environment:
+  #       POSTGRES_USER: airflow
+  #       POSTGRES_PASSWORD: airflow
+  #       POSTGRES_DB: airflow
+  #   volumes:
+  #       # The data folder is a named volume mounted to /var/lib/postgresql/data
+  #       - postgres-db-volume-mlflow:/var/lib/postgresql/data
+
+  # mlflow-webserver:
+  # mlflow-server:
+  #   build:
+  #    context: .
+  #    dockerfile: Dockerfile.mlflow
+  #   # <<: *airflow-common 
+  # #   # image: ${MLFLOW_IMAGE_NAME:-latest_mlflow:latest}
+  #   # command: mlflow server --backend-store-uri postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres-mlflow/${POSTGRES_DB} --default-artifact-root ./mlflow-artifact --host 127.0.0.1 --port 5000
+  #   ports:
+  #     - 5000:5000
+  #   environment:
+  #     <<: *airflow-common-env
+  # # #           # The following credentials allow connection to the S3 server.
+  # #           AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
+  # #           AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
+# #           AWS_DEFAULT_REGION: ${AWS_REGION}mlflow_server
+    # healthcheck:
+    #     test: ["CMD", "curl", "--fail", "http://localhost:5000/health"]
+    #     interval: 10s
+    #     timeout: 10s
+    #     retries: 5
+    # restart: always
+    # depends_on:
+    #   - postgres-mlflow
+    # volumes:
+    #   - ./mlflow-data:/opt/airflow/mlflow-data
+    # - ./airflow/mlflow:/opt/airflow/mlflow
+          
+
+      # # The following command will launch the mlflow webserver on port 5000, with postgresql as the database
+      # # and S3 as the artifact storage.
+      # # The option "--serve-artifacts" will enable the serving of artifacts through mlflow as a proxy to the S3 server.
+  # command: mlflow server --backend-store-uri postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres-mlflow/${POSTGRES_DB} --default-artifact-root s3://${AWS_BUCKET_NAME}/ -h 0.0.0.0 -p 5000 --serve-artifacts
+  # command: mlflow server --backend-store-uri postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres-mlflow/${POSTGRES_DB} --default-artifact-root ./mlflow-artifact --host 127.0.0.1 --port 5000
+  
+
+volumes:
+  postgres-db-volume-airflow:
+  # mlflow:
+  mlflow-data:
+  # postgres-db-volume-mlflow:

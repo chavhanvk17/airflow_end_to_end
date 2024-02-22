@@ -1,0 +1,21 @@
+[2024-02-21T14:52:05.050+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: airflow-s3-mlflow.model_training manual__2024-02-21T14:51:43.959878+00:00 [queued]>
+[2024-02-21T14:52:05.059+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: airflow-s3-mlflow.model_training manual__2024-02-21T14:51:43.959878+00:00 [queued]>
+[2024-02-21T14:52:05.060+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-02-21T14:52:05.076+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): model_training> on 2024-02-21 14:51:43.959878+00:00
+[2024-02-21T14:52:05.084+0000] {standard_task_runner.py:60} INFO - Started process 19932 to run task
+[2024-02-21T14:52:05.088+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', '***-s3-mlflow', 'model_training', 'manual__2024-02-21T14:51:43.959878+00:00', '--job-id', '250', '--raw', '--subdir', 'DAGS_FOLDER/***-aws-mlflow.py', '--cfg-path', '/tmp/tmpysers4j8']
+[2024-02-21T14:52:05.091+0000] {standard_task_runner.py:88} INFO - Job 250: Subtask model_training
+[2024-02-21T14:52:05.109+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-02-21T14:52:05.143+0000] {task_command.py:423} INFO - Running <TaskInstance: airflow-s3-mlflow.model_training manual__2024-02-21T14:51:43.959878+00:00 [running]> on host b14d6cdb7c29
+[2024-02-21T14:52:05.230+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='***-s3-mlflow' AIRFLOW_CTX_TASK_ID='model_training' AIRFLOW_CTX_EXECUTION_DATE='2024-02-21T14:51:43.959878+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-02-21T14:51:43.959878+00:00'
+[2024-02-21T14:52:05.247+0000] {credentials.py:1147} INFO - Found credentials in environment variables.
+[2024-02-21T14:52:07.241+0000] {logging_mixin.py:188} INFO - data file imported from s3
+[2024-02-21T14:52:07.244+0000] {logging_mixin.py:188} INFO - data imported from s3
+[2024-02-21T14:52:07.355+0000] {logging_mixin.py:188} INFO -  RMSE: 0.8528526258778343
+[2024-02-21T14:52:07.357+0000] {logging_mixin.py:188} INFO -  MAE:  0.645031393708269
+[2024-02-21T14:52:07.359+0000] {logging_mixin.py:188} INFO -  R2:  0.05367522047772455
+[2024-02-21T14:52:07.371+0000] {logging_mixin.py:188} INFO - predict result : 0.05367522047772455
+[2024-02-21T14:52:08.591+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-02-21T14:52:08.602+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=***-s3-mlflow, task_id=model_training, execution_date=20240221T145143, start_date=20240221T145205, end_date=20240221T145208
+[2024-02-21T14:52:08.643+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-02-21T14:52:08.670+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/VJ/Documents/MLOps/airflow_end_to_end/src/mlflow/mlruns/298318071083273289/b9b446cdd2a745349749349ce5780011/artifacts
+end_time: 1708497128931
+entry_point_name: ''
+experiment_id: '298318071083273289'
+lifecycle_stage: active
+run_id: b9b446cdd2a745349749349ce5780011
+run_name: bustling-rook-702
+run_uuid: b9b446cdd2a745349749349ce5780011
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708497123287
+status: 3
+tags: []
+user_id: VJ

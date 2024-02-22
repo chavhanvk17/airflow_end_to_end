@@ -1,0 +1,41 @@
+[2024-02-21T11:45:16.875+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: airflow-s3-mlflow.model_training manual__2024-02-21T11:44:49.630635+00:00 [queued]>
+[2024-02-21T11:45:16.888+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: airflow-s3-mlflow.model_training manual__2024-02-21T11:44:49.630635+00:00 [queued]>
+[2024-02-21T11:45:16.889+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-02-21T11:45:16.905+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): model_training> on 2024-02-21 11:44:49.630635+00:00
+[2024-02-21T11:45:16.914+0000] {standard_task_runner.py:60} INFO - Started process 8136 to run task
+[2024-02-21T11:45:16.917+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', '***-s3-mlflow', 'model_training', 'manual__2024-02-21T11:44:49.630635+00:00', '--job-id', '177', '--raw', '--subdir', 'DAGS_FOLDER/***-aws-mlflow.py', '--cfg-path', '/tmp/tmpj9d66_uf']
+[2024-02-21T11:45:16.920+0000] {standard_task_runner.py:88} INFO - Job 177: Subtask model_training
+[2024-02-21T11:45:16.940+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-02-21T11:45:16.980+0000] {task_command.py:423} INFO - Running <TaskInstance: airflow-s3-mlflow.model_training manual__2024-02-21T11:44:49.630635+00:00 [running]> on host b14d6cdb7c29
+[2024-02-21T11:45:17.085+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='***-s3-mlflow' AIRFLOW_CTX_TASK_ID='model_training' AIRFLOW_CTX_EXECUTION_DATE='2024-02-21T11:44:49.630635+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-02-21T11:44:49.630635+00:00'
+[2024-02-21T11:45:17.113+0000] {credentials.py:1147} INFO - Found credentials in environment variables.
+[2024-02-21T11:45:20.963+0000] {logging_mixin.py:188} INFO - data file imported from s3
+[2024-02-21T11:45:20.966+0000] {logging_mixin.py:188} INFO - data imported from s3
+[2024-02-21T11:45:21.021+0000] {logging_mixin.py:188} INFO -  RMSE: 0.8528526258778343
+[2024-02-21T11:45:21.025+0000] {logging_mixin.py:188} INFO -  MAE:  0.645031393708269
+[2024-02-21T11:45:21.026+0000] {logging_mixin.py:188} INFO -  R2:  0.05367522047772455
+[2024-02-21T11:45:21.031+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/src/Modeltrainig/trainmodel.py", line 94, in mlflow_track
+    result = loaded_model.score(train_x, test_y)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sklearn/base.py", line 761, in score
+    return r2_score(y, y_pred, sample_weight=sample_weight)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sklearn/utils/_param_validation.py", line 214, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sklearn/metrics/_regression.py", line 989, in r2_score
+    y_type, y_true, y_pred, multioutput = _check_reg_targets(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sklearn/metrics/_regression.py", line 99, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sklearn/utils/validation.py", line 407, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1225, 3673]
+[2024-02-21T11:45:21.079+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=***-s3-mlflow, task_id=model_training, execution_date=20240221T114449, start_date=20240221T114516, end_date=20240221T114521
+[2024-02-21T11:45:21.100+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 177 for task model_training (Found input variables with inconsistent numbers of samples: [1225, 3673]; 8136)
+[2024-02-21T11:45:21.152+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-02-21T11:45:21.197+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

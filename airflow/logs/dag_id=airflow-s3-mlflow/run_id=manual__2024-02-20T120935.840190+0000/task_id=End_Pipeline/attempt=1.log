@@ -1,0 +1,15 @@
+[2024-02-20T12:09:58.746+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: airflow-s3-mlflow.End_Pipeline manual__2024-02-20T12:09:35.840190+00:00 [queued]>
+[2024-02-20T12:09:58.755+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: airflow-s3-mlflow.End_Pipeline manual__2024-02-20T12:09:35.840190+00:00 [queued]>
+[2024-02-20T12:09:58.756+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-02-20T12:09:58.771+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): End_Pipeline> on 2024-02-20 12:09:35.840190+00:00
+[2024-02-20T12:09:58.780+0000] {standard_task_runner.py:60} INFO - Started process 10758 to run task
+[2024-02-20T12:09:58.783+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', '***-s3-mlflow', 'End_Pipeline', 'manual__2024-02-20T12:09:35.840190+00:00', '--job-id', '158', '--raw', '--subdir', 'DAGS_FOLDER/***-aws-mlflow.py', '--cfg-path', '/tmp/tmphz5j2gu3']
+[2024-02-20T12:09:58.785+0000] {standard_task_runner.py:88} INFO - Job 158: Subtask End_Pipeline
+[2024-02-20T12:09:58.799+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-02-20T12:09:58.830+0000] {task_command.py:423} INFO - Running <TaskInstance: airflow-s3-mlflow.End_Pipeline manual__2024-02-20T12:09:35.840190+00:00 [running]> on host 0980836b8fdf
+[2024-02-20T12:09:58.898+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='***-s3-mlflow' AIRFLOW_CTX_TASK_ID='End_Pipeline' AIRFLOW_CTX_EXECUTION_DATE='2024-02-20T12:09:35.840190+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-02-20T12:09:35.840190+00:00'
+[2024-02-20T12:09:58.900+0000] {logging_mixin.py:188} INFO - MLOps Process is completed!!
+[2024-02-20T12:09:58.901+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-02-20T12:09:58.911+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=***-s3-mlflow, task_id=End_Pipeline, execution_date=20240220T120935, start_date=20240220T120958, end_date=20240220T120958
+[2024-02-20T12:09:58.957+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-02-20T12:09:58.972+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

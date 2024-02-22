@@ -1,0 +1,27 @@
+[2024-02-20T11:05:06.999+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: airflow-s3-mlflow.extract_data manual__2024-02-20T11:05:02.293200+00:00 [queued]>
+[2024-02-20T11:05:07.010+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: airflow-s3-mlflow.extract_data manual__2024-02-20T11:05:02.293200+00:00 [queued]>
+[2024-02-20T11:05:07.011+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-02-20T11:05:07.026+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): extract_data> on 2024-02-20 11:05:02.293200+00:00
+[2024-02-20T11:05:07.034+0000] {standard_task_runner.py:60} INFO - Started process 5891 to run task
+[2024-02-20T11:05:07.038+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', '***-s3-mlflow', 'extract_data', 'manual__2024-02-20T11:05:02.293200+00:00', '--job-id', '73', '--raw', '--subdir', 'DAGS_FOLDER/***-aws-mlflow.py', '--cfg-path', '/tmp/tmpwpd5dtb9']
+[2024-02-20T11:05:07.041+0000] {standard_task_runner.py:88} INFO - Job 73: Subtask extract_data
+[2024-02-20T11:05:07.059+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-02-20T11:05:07.097+0000] {task_command.py:423} INFO - Running <TaskInstance: airflow-s3-mlflow.extract_data manual__2024-02-20T11:05:02.293200+00:00 [running]> on host 0980836b8fdf
+[2024-02-20T11:05:07.188+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='***-s3-mlflow' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2024-02-20T11:05:02.293200+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-02-20T11:05:02.293200+00:00'
+[2024-02-20T11:05:07.192+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+TypeError: __init__() missing 1 required positional argument: 'task_id'
+[2024-02-20T11:05:07.202+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=***-s3-mlflow, task_id=extract_data, execution_date=20240220T110502, start_date=20240220T110507, end_date=20240220T110507
+[2024-02-20T11:05:07.214+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 73 for task extract_data (__init__() missing 1 required positional argument: 'task_id'; 5891)
+[2024-02-20T11:05:07.252+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-02-20T11:05:07.295+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

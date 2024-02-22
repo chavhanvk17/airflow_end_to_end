@@ -1,0 +1,2 @@
+alpha = 0.7
+l1_ratio = 0.6

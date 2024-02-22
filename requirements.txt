@@ -1,0 +1,12 @@
+# airflow-provider-mlflow
+# apache-airflow-providers-amazon
+# apache-airflow-providers-google 
+mlflow
+scikit_learn
+boto3 
+pandas
+datetime
+urllib3
+# requests
+# optuna
+# zipp

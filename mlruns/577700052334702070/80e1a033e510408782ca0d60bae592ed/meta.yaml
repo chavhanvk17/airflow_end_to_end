@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/577700052334702070/80e1a033e510408782ca0d60bae592ed/artifacts
+end_time: 1708436404032
+entry_point_name: ''
+experiment_id: '577700052334702070'
+lifecycle_stage: active
+run_id: 80e1a033e510408782ca0d60bae592ed
+run_name: overjoyed-cat-821
+run_uuid: 80e1a033e510408782ca0d60bae592ed
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708436400404
+status: 3
+tags: []
+user_id: VJ

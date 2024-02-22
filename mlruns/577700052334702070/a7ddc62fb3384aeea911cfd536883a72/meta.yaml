@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/577700052334702070/a7ddc62fb3384aeea911cfd536883a72/artifacts
+end_time: 1708436577100
+entry_point_name: ''
+experiment_id: '577700052334702070'
+lifecycle_stage: active
+run_id: a7ddc62fb3384aeea911cfd536883a72
+run_name: abrasive-chimp-741
+run_uuid: a7ddc62fb3384aeea911cfd536883a72
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708436573279
+status: 3
+tags: []
+user_id: VJ
