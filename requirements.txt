@@ -10,3 +10,9 @@ urllib3
 # requests
 # optuna
 # zipp
+Flask
+joblib
+dill
+pyYAML
+numpy
+-e .
